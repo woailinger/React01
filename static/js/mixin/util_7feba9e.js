@@ -1,0 +1,1 @@
+define("js/mixin/util",function(t,e){"use strict";var n={getData:function(t,e){var n=new XMLHttpRequest;n.onreadystatechange=function(){if(4===n.readyState&&200===n.status){var t=JSON.parse(n.responseText);e&&e(t)}},n.open("get",t,!0),n.send(null)},asideAdaptor:function(t){for(var e=[],n=0;n<t.length;n++)e.push(t[n]),e[n].cls="";return e}};e.Util=n});
